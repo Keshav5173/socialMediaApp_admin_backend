@@ -106,6 +106,7 @@ const loginUser = async(req, res)=>{
 }
 
 const getUser = async(req, res)=>{
+    console.log("viewProfile: ", req.user);
     return res.status(200).json({
         data: req.user
     })
